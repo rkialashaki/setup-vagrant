@@ -7,7 +7,7 @@ RUN apt-get update && \
     wget -q "https://www.virtualbox.org/download/oracle_vbox_2016.asc" -O- | apt-key add - && \
     apt-get update && \
     apt-get install -y vagrant python3 virtualbox-6.1 && \
-    pip install ansible
+    pip3 install ansible
 
 COPY entrypoint.sh /usr/src/entrypoint.sh
 
