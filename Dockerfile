@@ -6,7 +6,7 @@ RUN apt-get update && \
     echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bionic contrib" >> /etc/apt/sources.list && \
     wget -q "https://www.virtualbox.org/download/oracle_vbox_2016.asc" -O- | apt-key add - && \
     apt-get update && \
-    apt-get install -y vagrant python3 python3-pip virtualbox-6.1 && \
+    apt-get install -y vagrant python3 python3-pip dkms build-essential linux-headers-generic virtualbox-6.1 && \
     pip3 install ansible
 
 COPY entrypoint.sh /usr/src/entrypoint.sh
