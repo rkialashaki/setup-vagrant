@@ -1,7 +1,8 @@
 FROM ubuntu:18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get install -y wget && \
+RUN apt-get update && \
+    apt-get install -y wget && \
     echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bionic contrib" >> /etc/apt/sources.list && \
     wget -q "https://www.virtualbox.org/download/oracle_vbox_2016.asc" -O- | sudo apt-key add - && \
     apt-get update && \
