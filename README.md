@@ -1,6 +1,6 @@
 ## setup-vagrant
 
-[![Continuous Integration](https://github.com/oxr463/setup-vagrant/workflows/Continuous%20Integration/badge.svg)](https://github.com/oxr463/setup-vagrant/actions)
+[![Build](https://github.com/rkialashaki/setup-vagrant/workflows/Continuous%20Integration/badge.svg)](https://github.com/rkialashaki/setup-vagrant/actions)
 
 Setup your GitHub Actions workflow with HashiCorp Vagrant.
 
